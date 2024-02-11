@@ -1,0 +1,395 @@
+---
+title: "Exploring the Impact of Assistive Technology and Disabilities on Travel Behavior"
+author: "Yujie Gong, Brianna Mateo, Lily Ruddy"
+date: "2023-12-13"
+bibliography: background.bib
+biblio-style: apalike
+output: pdf_document
+header-includes:
+    - \usepackage{pdfpages}
+    - \usepackage{setspace}\doublespacing
+editor_options: 
+  chunk_output_type: inline
+---
+# Abstract
+ Assistive technology plays an integral role in improving the quality of travel people with disabilities face. Many people with disabilities are unwilling or less likely to travel since there is additional labor, whether financial, mental, or physical to utilize public transportation.  Our research focused on how assistive technology influences the travel behavior of individuals and how income affects the use of assistive technology. Utilizing Chi-square tests and an analysis of variance (ANOVA), our key findings include: first, no statistically significant relationship between public transportation usage and assistive technology; second, a significant variation in total miles personally driven based on the type of assistive technology used; and third, a significant influence of income levels on individuals' choices of assistive technology. Our findings contribute to current literature by specifically concentrating on the role of assistive technology in enhancing the travel experience for individuals with disabilities.
+
+# Proposal
+
+## Research Questions
+
+The research questions we aim to address in this study revolve around the profound impact of assistive technologies and the presence of disabilities within households on travel behavior, choices, and experiences. We also seek to explore potential disparities in transportation modes between households with children who have disabilities and those without.
+
+The research questions is:
+
+*To what extent do assistive technologies and disabilities within households influence travel behavior, choices, and experiences?*
+
+To research this question, we plan to leverage data from the National Household Travel Survey (NHTS), a source on the travel behavior of the American public. Some variables we were looking to consider are all the medical devices, public transportation use, amount of miles driven, and income. Disability-related variables that will delve into the specifics of disabilities, including their types, severity, and assistive technology usage. Travel Behavior and Choices examine how individuals move, including transportation mode choices, travel frequency, purposes, distances, and travel time. Geographic Variables consider location and accessibility, shedding light on urban or rural settings, infrastructure access, and geographical obstacles. Finally, Transportation Accessibility evaluates the availability, reliability, convenience, and affordability of transportation options, illuminating the accessibility landscape for individuals with disabilities.
+
+By examining the intersection of assistive technologies, disabilities within households, and travel dynamics, this research will contribute to a deeper comprehension of the challenges and opportunities in optimizing transportation systems to accommodate diverse needs within society for both abled and disabled beings.
+
+## Planned Analysis
+
+Our analysis will use the dataset Person from NHTS. To gain an understanding of how assistive technologies facilitate traveling behavior among disabled individuals, we would begin by filtering disabled individuals based on their reported medical conditions using the MEDCOND variable. For assistive technology we would use the following variables in our analysis: W_CHAIR, W_CRUTCH, W_DOG, W_MTRCHR, W_NONE, W_SCOOTR, W_WHCANE, W_WLKR. To answer our research question, we would conduct multiple regression analysis, examining the relationship between various types of assistive technologies utilized by disabled individuals and the frequency of their weekly travel. To avoid the impact of confounding variables, we would include additional variables including personal income, number of jobs, race, age, and count of household numbers in our multiple regression models to ensure the accuracy of multiple regression analysis. We could also use ANOVA test to compare mean frequency of weekly travel among different groups of disabled individuals who use different assistive technologies. This approach could help us to identify if some of the assistive technologies are more effective in improving the travel behavior of disabled individuals. To test out how the use of assistive technologies impacts travel choices and experiences, we could conduct Chi-square tests to determine if there are statistically significant associations between specific assistive technologies and travel purposes or experiences.
+
+## Related Work
+
+There have been previous analyses done involving disability inclusion and travel across the United States. One such example identifies the general trends and patterns of traveling behaviors by people with disabilities [@henly2019]. Possessing a disability dramatically decreases a person's likelihood of leaving their house for leisure. However, those with a larger household income, tend to travel more since they have access to a personal vehicle. Not all people with disabilities experience transportation the same way. There are several factors such as wealth, geographic location, type of disability, etc. that influences how a person navigates through the world.
+
+Additionally, another paper examines the impact of Covid-19 on transportation with people with disabilities [@cochran2020]. This particular study found that those with disabilities already have difficulties interacting with transportation, and Covid-19 exacerbated those issues even further.
+
+Another paper investigates the social exclusion involved with individuals with disabilities accessing public transportation [@ralph2022]. For some people, disabilities limit the ability to participate in their communities since they are less likely to travel outside the home and travel time is typically longer than those without disabilities. Ralph, Morris, and Kwon concluded that to increase overall well being for people with disabilities, travel time and price needs to be lowered. Overall, these studies describe the extra challenges that individuals with disabilities face, and provide a few solutions to relieve some of the burden transportation places on them.
+
+# Background
+
+Assistive technology plays an integral role in improving the quality of travel people with disabilities face. Disabilities take on many shapes and forms and are constantly evolving. A person with a disability will go through life and experience travel completely differently than someone with the same disability. We would be completely remiss to overgeneralize or make wide sweeping assumptions of the whole population of people with disabilities especially with what restrictive data we have [@ralph2022]. For this specific paper, we are focusing on how people with disabilities that affect their movement use assistive technology to traverse through public transportation. Those with physical impairments, only a section of the disability community, are the most abundant in Americans over 18 years olds, 13.7% [@zablocki2022]. However, there are other disabilities, not just physical ones, that rely on technology. Assistive technology can only do so much in reducing the obstacles in the way. The infrastructure of airports, train stations, buses and the like must also be accommodated with ramps, elevators, and visibly distinguishable signs, etc. [@zablocki2022] [@lipp2015]. There is a social and financial responsibility for these spaces to include such accessibility arrangements. Many people with disabilities are unwilling or less likely to travel since there is additional labor, whether financial, mental, or physical to utilize public transportation [@ralph2022]. So if public transportation put in more effort, there would be more people traveling, and thus more money in the pockets of public transportation facilities [@lipp2015] Also, having a more accessible space will not only benefit those with mobility issues, but also those without. Overall, most public transportation have accessibility accommodations in place so their assistive technologies help them to make their way through [@lyu2017accessible]. Regardless, mobility assistive technology's purpose is to improve a person's quality of life by allowing them to move where without it they wouldn't otherwise be able to.
+
+However, the role of assistive technology is limited in its reach to help those with disabilities navigate through public transportation. Assistive tools and devices can only do so much, since there are other non physical barriers impeding travel for leisure and for work. Such barriers include the fear of stigmatization and the limited access to information about accommodations and accessibility in public spaces of travel [@saltes2018] [@hersh2013][@zablocki2022]. Some refuse to use their wheelchairs or canes in fear of the general public's perception of them. They do not want to be seen as "weak" or perceived with a visible disability [@hersh2013]. They also might not have an over reliance on their aid, losing their independence [@peterson2022]. Social stigma against people with disabilities is a very real and dehumanizing problem that could be deterring some people from travel. Another non physical barrier that assistive technology would do very little to help with, is the availability of information on accommodations. For some airports or train terminals, a person using a wheelchair may need to research ahead of time to see whether they have accommodations for them [@zablocki2022]. This additional burden or seeking out information for using public transportation with their assistive technologies may prevent someone from traveling. Despite the various opinions on the usefulness of assistive technologies on public transportation, our first hypothesis is:
+
+*H1-1: There is a relationship between public transportation use and the usage of assistive technologies in the United States.*
+
+Navigating the complexities of travel can be a daunting task for those with physical impairments or other disabilities, often requiring specialized equipment and support to ensure safe and comfortable journeys. The effective use of assistive technologies has the potential to significantly impact travel behavior, choices, and overall travel experiences, ultimately contributing to greater independence and quality of life.
+
+One of the most common categories of assistive technologies that transforms the travel landscape for individuals with disabilities is mobility aids. These encompass a range of devices, including wheelchairs, scooters, walkers, canes, crutches, prosthetic devices, and orthotic devices. These assistive technologies are indispensable for individuals with physical impairments as they provide increased mobility, allowing for more independent and comfortable travel.
+
+Recent studies shed light on the potential of assistive technologies to transform the travel experiences of people with disabilities. For instance, research has delved into the use of smartphones as aids for individuals with severe to profound intellectual disabilities and blindness during indoor travel. The findings from this study showcased promising results, highlighting the capacity of technology to enhance travel experiences for people with disabilities, particularly when navigating indoor spaces. [@lancioni2008]
+
+In addition, people with disabilities frequently experience extended travel durations, particularly when engaging in activities outside their homes. A recent study conducted by Ralph et al. (2022) dives into the travel time premiums linked to various disability types, highlighting the crucial need to systematically recognize constraints related to travel and activities. This research discusses the significance of comprehending the distinct challenges and needs associated with various types of disabilities in the strategic development and enhancement of transportation systems [@ralph2022].
+
+The integration of technology aids, such as printed Google Maps directions and smartphone apps, has proven to be highly effective in enhancing the independence of young adults with intellectual disabilities during transportation training programs. This innovative approach significantly boosts their public transportation travel skills, showcasing the considerable potential of assistive technologies in empowering individuals with disabilities. By leveraging these tools, individuals can actively participate in and contribute to their communities with increased confidence and autonomy [@mcdonnell2021].
+
+In a study led by Chang Dae Lee and colleagues, journey mapping was employed to pinpoint travel considerations and barriers faced by individuals with disabilities. The findings emphasized the critical importance of addressing both vehicle-specific obstacles and infrastructure issues to alleviate challenges in transportation for people with disabilities. By proactively identifying and resolving these hindrances, there is a potential to establish a more inclusive and accessible transportation environment, thereby improving the overall travel experiences for individuals with disabilities.
+
+In light of these bodies of work, we aim to investigate :
+
+*H 1-2: There is a statistical significance difference in the total miles personally driven in all vehicles among disabled individuals based on the types of assistive technologies.*
+
+The central focus of our hypothesis lies in the personal miles traveled, distinguishing it from prior studies performed. While earlier works dove into various facets such as the utilization of technological aids, journey mapping, and barrier identification, our hypothesis takes a more refined approach, honing in on the total miles personally driven. This targeted methodology provides a nuanced understanding of how assistive technologies impact the actual travel behavior of individuals with disabilities. By concurrently examining both the total miles personally driven and the specific assistive technologies used, our investigation offers a comprehensive and holistic view of the intricate relationship between technology and travel behavior. This dual focus not only sheds light on the quantity of travel but also elucidates the specific tools and aids shaping that behavior. Recognizing that different assistive technologies may exert varying influences on personal travel behavior, our study aims to unveil nuanced insights. Some technologies may prove more effective in fostering independence and mobility, while others may exhibit limitations. By considering both dimensions, our investigation aims to uncover which technologies are most beneficial for enhancing personal travel experiences among individuals with disabilities. This holistic understanding of the interplay between assistive technologies and personal travel provides a foundation for targeted policy recommendations and interventions. Armed with this information, policymakers can tailor support services, allocate funding, and design accessibility initiatives based on the specific needs identified in our study. This approach facilitates the development of more effective and personalized strategies to improve transportation outcomes for individuals with disabilities. Lastly, integrating personal travel data alongside information about assistive technologies enables an exploration of user experience and satisfaction. Our approach allows researchers to delve beyond the quantitative aspects of travel, examining qualitative dimensions such as comfort, convenience, and overall satisfaction correlated with the frequency of miles traveled using chosen assistive technologies.
+
+People with disabilities who use assistive technology are more likely to use public transportation (e.g. bus, subway, light rail etc) to travel outside their homes than those without assistive technology. Previous literature has investigated the cost implications associated with assistive technology for individuals with disabilities. These comprehensive studies reveal two primary trends in the purchase of assistive technology. One trend involves medically prescribed devices that are financially supported by programs such as Medicare and Medicaid, while the other trend is that individuals acquire these technologies independently from the open market. In the examination of assistive technologies for individuals with spina bifida, Bamer et al. discovered that wheelchairs and their maintenance have the highest numbers of claims for insurance, followed by orthotic and prosthetic devices across all age groups [@Bamer2010]. When comparing across age groups, the costs were highest for the youngest age group (0-15 years) and individuals aged 26 and older, while the 16-25 age group experienced relatively lower costs. Furthermore, the authors observed that the costs for assistive technology are relatively low compared to other medical costs for the participants. Dahlberg et al. explored Sweden's voucher system for assistive technology [@Dahlber2014]. Under this system, users receive vouchers for assistive devices based on their assessments. However, the authors identified potential limitations in this system, as it could potentially restrict access to assistive technology for users. Concerns were also raised regarding the second-hand market for such devices. Tangcharoensathien et al. identified the financial barriers and the lack of government funding as significant factors influencing individuals' access to assistive technology [@tangcharoensathien2018improving]. Their findings highlighted the need for government subsidies to make assistive technology accessible to those who may not be able to afford it based on their household income. One focus of our research is to investigate the impact of income levels on the selection of assistive technologies for individuals with disabilities. Interestingly, there is a limited amount of literature exploring or suggesting the potential relationship between income and assistive technology choices, making this a crucial area of investigation. Jamali et al. revealed that the use of assistive technology in children is more influenced by contextual factors, such as societal and political elements, rather than individual characteristics [@jamali2021socio]. Though they did not explicitly examine income, household income or average income of their living area are factors one could look into when considering contextual factors. Kaye et al. observed disparities in the utilization of high-tech, middle-tech, and low-tech assistive technology across varying income levels [@kaye2008disparities]. Their findings indicated that individuals with lower incomes are more likely to resort to low-tech assistive solutions. Tshiswaka et al. identified that African American males tend to use assistive technology less frequently compared to other demographic groups, a trend that might be attributed to factors such as lower income [@Tshiswaka2015]. Several previous studies have explored how assistive technology could potentially assist individuals with disabilities in alleviating poverty. Kett et al. stressed the need for technology solutions in low and middle-income countries to facilitate travel for disabled individuals [@kett2020disability]. Marasinghe et al. emphasize the urgency of providing affordable assistive technology for the aging disabled population [@marasinghe2015assistive]. Cote's research reveals a continued dependence on human assistance in low and middle-income countries, highlighting the importance of improving the accessibility of assistive technology, potentially with government support for low-income families [@cote2021social] With that our
+
+*H2: People with disabilities who have high incomes are more likely to use assistive technologies to travel than those who don't have high income.*
+
+# Methods
+
+## Data Source
+
+We intended to leverage the data from the 2022 National Household Travel Survey (NHTS), a comprehensive source of information on the travel behavior of the American public. This dataset offered valuable insights into individual and household travel behavior, which is linked to demographic and economic factors. The NHTS included four datasets: Household, Person, Vehicle, and Trip. The Household dataset provided information about the number of people in a family, household income, number of drivers and vehicles. The Person dataset provided information about demographics information, health status, worker status, income status, travel miles and use of vehicles of each individual. The Vehicle dataset offered details about each vehicle used by individuals and gave information about their type, years owned, and miles traveled, etc. The Trip dataset included each trip traveled by individuals providing data including the origin and destination of each trip, distance, purpose and means of transportation. In our study, we planned to use the Person dataset. We used the MEDCOND variable to filter to those with a medical condition or disability that affected their ability to travel. The individuals who indicated "yes" were included in our analysis. We also filtered to include individuals who responded with their ages.
+
+## Variable Selection
+
+Our first hypothesis had two corresponding hypotheses. The first hypothesis, H1-1, was interested in seeing if there was a significant relationship in the use of public transportation among individuals with disabilities using assistive technologies and without using them. Therefore, our dependent variable was PTUSED, or the number of times an individual has used public transportation in the last 30 days. It was a discrete numerical variable. The minimum amount was 0 while the maximum was 30 times. We grouped the frequencies into 2 categories, User and Non User of public transportation, in our new variable, PTFREQ. If a person self reported a public transportation usage of 0, they would belong in the Non User level. Any other number [1, 30] fell into User. Despite the seemingly skewed distribution, the Non User category captured almost 90% of the total responses after filtering. We excluded the people who were not ascertained, didn't know, and preferred not to say about their frequency of travel. We also filtered out any individuals that did not specify their age or public transportation use. The independent variable were all the medical devices within the data set such as, W_CANE, W_CRUTCH, W_CHAIR, W_DOG, W_MTRCHR, W_SCOOTR, W_WHCANE, W_WLKR, and W_NONE. We created a new indicator variable called MED_DEV_USED. If TRUE, that particular individual indicated they used any of the assistive technologies listed above.
+
+For the second part of our first hypothesis, H1-2 we were interested in seeing if there was a significant difference in total miles personally driven in all vehicles among individuals with disabilities using various types of assistive technologies. For this hypothesis, we were also using the medical devices within our data, and we chose to look at variables that give a clear indication of the experiences, choices and behavior given that there were no variables specifically indicating satisfaction. So, to work around that , the best dependent variables we used were travel behavior and frequency; using these variables was the best indicator in determining satisfaction. For instance, if a person was traveling often; they were pretty satisfied with the way they were traveling; and utilized that as a measure of satisfaction or experience. Some dependent variables that we are considering, is related to the assistive technologies, such as canes (W_CANE), crutches (W_CRUTCH), service dogs (W_DOG), motorized wheelchairs (W_MTRCHR), motorized scooters (W_SCOOTER), and others. Each device is coded as binary (0 or 1) to denote non-usage or usage, respectively.
+
+For our second hypothesis, H2, we explored how income level affected the choice of assistive technology. The independent variable chosen to measure income levels is HHFAMINC, which was the household income. The HHFAMINC was a categorical variable and each number indicated an income range, with 1 representing less than \$10,000 to 11 representing \$200,000 and more. The dependent variables that were used for this hypothesis were variables indicating uses of assistive technology. These variables indicated what assistive technology is used by the person. These variables were coded as 0 if the person did not use the assistive technology and were coded as 0-6 for each assistive technology if the person utilized it. We reformatted the dataset and created a variable MED_DEV to pivot all the assistive technology variables into one single variable. We created another variable of MULT_MED_DEV to indicate if the individual used more than one assistive technology.
+
+## Data Analytics
+
+For H1-1 we planned to use chi square of independence to test whether there is a relationship between the use of medical devices and being a user of public transportation. If they had a relationship we would be able to determine whether it was a positive or negative association. Our dependent variable, PTUSED, was not normally distributed, therefore we had to use a non parametric analysis. Hypothesis 1-2: Assessing Travel Behavior Differences For Hypotheses 1 and 2, we propose utilizing the Analysis of Variance (ANOVA) test. This statistical method will enable us to evaluate variations in travel behavior, specifically focusing on modes such as PARA, BIKE, CAR, TAXI, and WALK, among individuals with disabilities residing in households utilizing various assistive technologies (W_CANE, W_CRUTCH, W_DOG, W_MTRCHR, W_SCOOTER, W_WHCANE, W_WLKR, W_NONE). Linear Regression Analysis: Influence of Assistive Technologies on Total Miles Driven To delve into the impact of specific assistive technologies on the total miles personally driven in all vehicles (YEARMILE) by individuals with disabilities, we will employ Linear Regression Analysis. This approach allows us to model and quantify the relationship between the use of assistive technologies and travel behavior. Testing Statistical Significance: ANOVA Regression Modeling To test the statistical significance of the total miles personally driven across various assistive technologies among individuals with disabilities, we will utilize regression modeling through ANOVA. This analysis will help us discern the impact of different assistive technologies on travel distances, with a focus on individuals with medical conditions. We will filter the dataset based on medical conditions to ensure that our investigation is specifically tailored to people with disabilities. By employing these statistical methods and focusing on individuals with medical conditions, our study aims to provide a nuanced understanding of the relationship between assistive technologies, travel behavior, and total miles driven among individuals with disabilities.
+
+We planned to use the Chi-square test and generate a cross table for the two variables for our second hypothesis. We first conducted a Chi-square test with our categorical variables, HHFAMINC and MED_DEV. Using the Chi-square test, we could know if different income levels have a relationship with the choice of assistive technology. Then, we generated a cross table to look into how the choice of each assistive technology is associated with the income level of the individuals. In our analysis, We only included those individuals who use single medical devices to satisfy the mutually exclusive assumption of Chi-square test.
+
+# Results
+
+```{r echo=F}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+# packages
+##library(descr, quietly = TRUE)
+##library(pander)
+library(moderndive)
+library(Stat2Data) 
+library(ggplot2)
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+##library(gmodels)
+library(utils)
+library(tidyverse)
+library(rmarkdown)
+library(broom)
+library(knitr)
+```
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+# loading in data 
+#perpub <- read_csv("dataset/perpub.csv")
+perpub <- read_csv("~/Documents/2023fall/sds300/perpub.csv")
+```
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+# cleaning
+cleaned_perpub =
+  perpub %>%
+  filter(PTUSED >= "0" & R_AGE > 0 & MEDCOND == "01") %>%
+  mutate(PTFREQ = case_when(
+    (PTUSED <= 0) ~ "Non User",
+    (PTUSED >= 1 & PTUSED <= 30)~ "User",
+  )) %>%
+  dplyr::select(HOUSEID, PERSONID, R_AGE, R_SEX, PTUSED, PTFREQ, W_CANE, W_CRUTCH, W_CHAIR, W_DOG, W_MTRCHR, W_SCOOTR, W_WHCANE, W_WLKR, W_NONE)
+
+# order
+cleaned_perpub$PTFREQ = factor(cleaned_perpub$PTFREQ, levels = c("Non User", "User"), ordered = TRUE)
+
+
+```
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+
+
+# Only want those that indicated use of medical device or no medical device, we need to remove them from the data bc we're comparing those with assistive technologies against those without 
+# cleaning for medical devices 
+cleaned_perpub$W_CANE[cleaned_perpub$W_CANE!="01"]<- NA
+cleaned_perpub$W_CANE[cleaned_perpub$W_CANE=="01"]<- "Cane"
+
+cleaned_perpub$W_CHAIR[cleaned_perpub$W_CHAIR!="07"]<- NA
+cleaned_perpub$W_CHAIR[cleaned_perpub$W_CHAIR=="07"]<- "Wheelchair"
+
+cleaned_perpub$W_CRUTCH[cleaned_perpub$W_CRUTCH!="05"]<- NA
+cleaned_perpub$W_CRUTCH[cleaned_perpub$W_CRUTCH=="05"]<- "Crutches"
+
+cleaned_perpub$W_DOG[cleaned_perpub$W_DOG!="04"]<- NA
+cleaned_perpub$W_DOG[cleaned_perpub$W_DOG=="04"]<- "Dog"
+
+cleaned_perpub$W_MTRCHR[cleaned_perpub$W_MTRCHR!="08"]<- NA
+cleaned_perpub$W_MTRCHR[cleaned_perpub$W_MTRCHR=="08"]<- "Motorized_Chair"
+
+cleaned_perpub$W_NONE[cleaned_perpub$W_NONE!="0"]<- NA
+cleaned_perpub$W_NONE[cleaned_perpub$W_NONE=="0"]<- "None"
+
+cleaned_perpub$W_SCOOTR[cleaned_perpub$W_SCOOTR!="06"]<- NA
+cleaned_perpub$W_SCOOTR[cleaned_perpub$W_SCOOTR=="06"]<- "Motorized_Scooter"
+
+cleaned_perpub$W_WHCANE[cleaned_perpub$W_WHCANE!="03"]<- NA
+cleaned_perpub$W_WHCANE[cleaned_perpub$W_WHCANE=="03"]<- "White_Cane"
+
+cleaned_perpub$W_WLKR[cleaned_perpub$W_WLKR!="02"]<- NA
+cleaned_perpub$W_WLKR[cleaned_perpub$W_WLKR=="02"]<- "Walker"
+
+# uniting the columns int MED_DEV
+cleaned_perpub = unite(cleaned_perpub, col = "MED_DEV", c("W_CANE", "W_CHAIR", "W_CRUTCH", "W_DOG", "W_MTRCHR", "W_NONE", "W_SCOOTR", "W_WHCANE", "W_WLKR"), na.rm = TRUE, sep = ",", remove = FALSE)
+
+# removing those that don't have anything for MED_DEV 
+cleaned_perpub <-
+  cleaned_perpub %>%
+  filter(MED_DEV != "")
+
+# new column for MED_DEV_USAGE
+cleaned_perpub$MED_DEV_USAGE =  with(cleaned_perpub, ifelse(MED_DEV == "None", TRUE, FALSE))
+
+```
+
+# Analysis
+
+## Hypothesis 1-1
+
+For the first hypothesis part one or H1-1, we are interested in seeing if the usage of assistive technologies is statistically significant to the frequency of public transportation use. For this hypothesis, we use the Chi-square test of independence to see if there is any relationship between these variables. The assumptions to use this particular test requires that the data are frequencies, not percentages. Our data passes this requirement. The next assumption is that each of the levels within our variables are mutually exclusive. One of the variables we are comparing is MED_DEV_USAGE which indicates whether an individual uses an assistive device or not, therefore, it is mutually exclusive. The other variable is PTFREQ, which has 2 categories which are also mutually exclusive. Each person can only fit into one of the available categories. Another requirement is that each group is independent from one another. From the way this survey was conducted, each individual surveyed is independent from one another. Additionally, the value of each of the expected frequencies should be greater than 5., which is not something we should be concerned with. After checking each assumption for the chi-square test, we can analyze the data. For this analysis we are going to use an alpha level of .05.
+
+The following is the frequency and proportional tables.
+
+```{r}
+#| eval: true
+#| echo: false
+# frequency table
+freq <- table(cleaned_perpub$PTFREQ, cleaned_perpub$MED_DEV_USAGE)
+
+kable(freq)
+```
+
+```{r}
+#| eval: true
+#| echo: false
+#| results: hide
+# proportional table
+med_freq_t <- table(cleaned_perpub$PTFREQ, cleaned_perpub$MED_DEV_USAGE)
+addmargins(med_freq_t, margin = c(1,2))
+prop.table(med_freq_t)
+prop.table(med_freq_t, margin = 1) 
+```
+
+```{r}
+#| eval: true
+#| echo: false
+prop <-prop.table(med_freq_t, margin = 1) 
+kable(prop)
+
+```
+
+The Chi Square table is shown below.
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+
+library(descr, quietly = TRUE)
+library(pander)
+
+cross_table_combined <- descr::CrossTable(cleaned_perpub$PTFREQ, cleaned_perpub$MED_DEV_USAGE, chisq = TRUE, expected = TRUE, prop.c = FALSE, prop.t = FALSE, prop.chisq = FALSE, sresid = TRUE, format = "SPSS")
+
+cross_table_combined[["RowData"]] <- "Public Transit Frequency"
+cross_table_combined[["ColData"]] <- "Assistive Technology"
+
+panderOptions('round',2)
+panderOptions('digits',3)
+panderOptions('keep.trailing.zeros',TRUE)
+pander::pander(cross_table_combined, split.table = Inf, split.cells = Inf, caption = "**Cross Table of Public Transit Usage and Assistive Technologies**") 
+```
+
+Creating a contingency table, we compared the expected values assuming there was independence between public transportation usage and assistive devices usage. We used the standard residuals to determine whether there was anything statistically significant between each of the levels, we found nothing statistically significant. None of the standard residuals are greater than the absolute value of 1.96. Therefore, we can say that usage of public transit and assistive technology are independent of one another.
+
+## Hypothesis 1-2
+
+```{r}
+#| eval: true
+#| echo: false
+##
+cleaned_perpub_h1_2 <- perpub %>%
+  filter(PTUSED >= "0" & R_AGE > 0 & MEDCOND == "01") %>% #filtering out the medical coditions 
+  mutate(MEDDEV = case_when(
+    W_CANE == "01" ~ "Cane",
+    W_CHAIR == "07" ~ "Wheelchair",
+    W_CRUTCH == "05" ~ "Crutches",
+    W_DOG == "04" ~ "Dog",
+    W_MTRCHR == "08" ~ "Motorized_Chair",
+    W_NONE == "0" ~ "None",
+    W_SCOOTR == "06" ~ "Motorized_Scooter",
+    W_WHCANE == "03" ~ "White_Cane",
+    W_WLKR == "02" ~ "Walker",
+  )) %>%
+  filter(YEARMILE >= 0 & YEARMILE <= 2000) %>% ##filtering only the responses 0-2000according to code book
+  select(MEDDEV, YEARMILE)
+
+cleaned_perpub_h1_2 <- na.omit(cleaned_perpub_h1_2)
+##View(cleaned_perpub_h1_2)
+
+```
+
+```{r}
+#| eval: true
+#| echo: false
+# Install and load necessary packages
+# Install and load necessary packages
+
+library(ggplot2)
+library(RColorBrewer)
+
+#Assuming 'cleaned_perpub_h1_2' is your data frame
+ggplot(cleaned_perpub_h1_2, aes(x =YEARMILE, y = MEDDEV, fill = MEDDEV)) +
+  geom_boxplot() +
+  labs(title = "Relationship Between Total Miles
+Personally Driven and Assistive Technology Type",
+       x = "Miles Personally Driven in Vehicles",
+       y = "Medical Devices Used",
+       fill= "Medical Devices") +
+  theme_minimal() +
+  scale_fill_brewer(palette = "Set3")
+
+
+
+```
+
+```{r}
+#| eval: true
+#| echo: false
+#| results: hide
+# Fit the ANOVA model
+pub_trans_model <- aov(YEARMILE ~ MEDDEV, data = cleaned_perpub_h1_2)
+
+# Display ANOVA table
+anova_table <- summary(pub_trans_model)
+print(anova_table)
+# Tidy up ANOVA results
+tidy_results <- tidy(pub_trans_model)
+
+kable(tidy_results, format = "markdown", digits = 10)
+```
+
+```{r}
+#| eval: true
+#| echo: false
+
+# Tidy up ANOVA results
+kable(tidy_results, format = "markdown", digits = 10)
+```
+
+There is a significant difference in the total miles personally driven in all vehicles among individuals with disabilities using various types of assistive technologies. The analysis of variance (ANOVA) was conducted to examine the difference in the total miles personally driven among individuals with various types of assistive technologies.
+
+The results revealed a highly significant difference in total miles driven across the different assistive technology groups (F(7,4803) = 7.458, p \< 0.001), with a p-value of 6e-9. The large F value suggests substantial variability between the groups compared to within-group variability. With a p-value well below the conventional significance level of 0.05, we reject the null hypothesis, providing strong evidence that the total miles personally driven significantly vary among individuals with different assistive technologies. Based on the ANOVA results, we have evidence to support the hypothesis that there is a significant difference in the total miles personally driven among individuals with different types of assistive technologies.
+
+According to our boxplot, the analysis of overall travel patterns among individuals using various assistive technologies reveals interesting insights. It appears that crutch users tend to travel more than those using other assistive devices, aligning with the expectation that crutches indicate a higher level of mobility. Surprisingly, none of the groups, including crutch users, appear to have median miles personally driven exceeding 1000 miles in 2017, hinting at a potential dataset constraint. The variability among groups is striking, as indicated by the significant length of each boxplot, suggesting diverse factors such as personal preferences and lifestyle contribute to the wide range of miles traveled. Despite this variability, there is consistency in the overall pattern, with all groups maintaining travel distances between 0 and 2000 miles. This uniformity highlights the similarity in mobility patterns among individuals using different assistive technologies. A noteworthy observation pertains to white cane users, who generally exhibit lower travel distances. However, an outlier with 1000 miles challenges this trend, emphasizing the need for further investigation to understand the unique circumstances contributing to this exceptional case. Examining the symmetry of distribution among groups reveals distinct patterns. Cane users and individuals without assistive technologies show a symmetric distribution of miles personally driven, while walker, motorized scooter, and motorized chair users exhibit a slight right skew. In contrast, wheelchair and crutch users display a more pronounced right skew, indicating differing travel behaviors among these groups. The analysis uncovers nuances in travel behavior among individuals with various assistive technologies, emphasizing both commonalities and distinct patterns that contribute to the overall understanding of mobility in this demographic.
+
+In conclusion, our study shows a clear connection between the type of assistive technology and how far people with disabilities drive. But there's a lot more to explore.Considering the sensitive nature of personal data, especially when it comes to health-related details and how long someone can sit in a car, there are more challenges in digging deeper into individual experiences. Factors like affordability, accessibility, adaptability, and safety features all play a role. The study's limits highlight the need for future research that looks closely at specific disability types and how they link to driving abilities. This understanding is crucial for creating better support and making driving more inclusive for people with disabilities.
+
+## Hypothesis 2
+
+Further analysis through a cross table highlights detailed observations, see the table in appendix. In the income level less than \$10,000, a residual of 2.63 indicates significantly higher-than-expected use of motorized wheelchairs. Within the \$15,000 to \$24,999 range, canes show a residual of 2.56, indicating more people using them than expected. Non-utilization of assistive technology has a lower-than-expected residual of -2.99. Walkers show a higher use than expected with a residual of 5.58, while wheelchairs have a lower use than expected with a residual of -2.82.
+
+For the \$75,000 to \$99,999 income level, canes have a lower use than expected with a residual of -2.21, and non-utilization of assistive technology has a higher number than expected with a residual of 2.34. In the \$100,000 to \$124,999 range, canes show a lower use than expected with a residual of -2.32, while crutches have a higher use than expected with a residual of 2.01, and non-utilization has a higher number than expected with a residual of 2.71. Walkers have a lower use than expected with a residual of -3.49.
+
+For the \$125,000 to \$149,999 income level, canes have a lower use than expected with a residual of -2.20, non-utilization has a number higher than expected with a residual of 2.32, and walkers have a lower use than expected with a residual of -2.46. In the \$150,000 to \$199,999 range, walkers show lower use than expected with a residual of -1.98.
+
+Within the income interval of \$200,000 or more, canes have a lower use than expected with a residual of -2.64. Crutches have a higher use than expected with a residual of 3.14, non-utilization of assistive technology has a higher number than expected with a residual of 1.87, and walker utilization has a lower use than expected with a residual of -2.04. The use of wheelchairs is higher than expected, as indicated by a residual of 2.14.
+
+
+# Discussion
+
+For our first part of the hypothesis; H-1; we found no statistically significant association between usage of public transportation and assistive technology. This was not the result that we were hoping for, when conducting the analysis. Previous research has indicated that individuals who have disabilities are less likely to interact with public transportation in some way. For example, for those that were new to mobility aids, they were less likely to go on public transportation since they were less confident with full operation quite yet [@henly2019]. We could see how this finding goes against what we hypothesized. Another piece of literature that went against our results, is that those with cognitive disabilities were more likely to use private transportation rather than public transportation due to the overwhelming amount of stimuli that could affect them [@ralph2022]. Therefore, those with disabilities may be less likely to utilize public transit contributing to the lower numbers. However, there were limitations in the conclusions that we could make through our data and our analysis. For one, there were limitations with the assistive technologies present within the data set. Not all of the assistive technologies that those with disabilities utilize were represented in this analysis. Almost all of them were devices used to aid in mobility. For example, hearing aids were not included within the dataset. Therefore, we can not make blanket statements involving all people with disabilities using medical or assistive devices. Another limitation is the way in which we divide the public transportation frequencies up. Depending on how many categories we decided and the number of uses on public transportation that go in each category greatly affects the results. The decision to divide the public transportation numbers in such a way came from previous research done. From this particular paper that studied the use of public transit among older adults in the United States, any person who used public transportation in the last 30 days was classified as a public transit user [@gimie2022]. A reason as to why our analysis did not produce significant results could be due to the large numbers of people in the United States who do not use public transportation. Like we mentioned in the methods, almost 90% of those that participated in the survey did not use public transportation after filtering. Such large quantities of zeros made it difficult to find relationships between public transportation and assistive technology. The data makes sense, given that 45% of Americans do not have access to public transportation according to the American Public Transportation Association. Most urban areas in the U.S. have available public transportation, so the lack of public transit all across the country can explain our low findings.
+
+Now moving on to personal travel, the second part of our hypothesis, H1-2 ;hones in if theres a strong link between the assistive technology people with disabilities use and how far they drive.
+
+The results of our study shed light on the intricate relationship between the choice of assistive technology and the travel behavior of individuals with disabilities, prompting thoughtful consideration and raising several key questions. As we delve into the discussion of these findings, it is imperative to reflect on why these results emerged and how they contribute to addressing one of our research questions: How does the choice of assistive technology influence individuals' travel behavior? Firstly, the observed trend of crutch users covering greater distances aligns with the notion that crutches symbolize a higher level of mobility. This finding corresponds with the expectation that individuals relying on crutches may have more extensive travel needs and capabilities compared to those using alternative assistive devices. Oftentimes, crutches serve as temporary mobility aids, and their duration of use can vary based on the underlying condition. Especially when it comes to driving, as long as your right foot remains active, individuals using crutches can continue to operate a vehicle. In contrast to individuals with a deeper level of mobility impairment, such as those relying on a wheelchair, the impact on driving ability can be profound. Conditions involving spinal, back, or leg paralysis can significantly influence how someone can operate a vehicle and, consequently, limit the distance they can personally travel.The logical connection between crutches and increased mobility supports the validity of our results and reinforces the idea that the type of assistive technology chosen significantly influences travel behavior. However, the existence of a potential dataset constraint, evidenced by none of the groups surpassing a median of 500 miles in personal travel for the year 2017, introduces an intriguing element to the discussion.
+
+This constraint prompts us to question whether external factors, such as limitations in the dataset or perhaps broader societal factors, could be influencing the overall travel patterns. It forces researchers to explore beyond the presented data and consider external influences that may impact the travel behavior of individuals with disabilities The variability among groups, as indicated by the significant range in miles traveled within each group, highlights the multifaceted nature of mobility patterns. This variability implies that personal preferences and lifestyle factors contribute significantly to travel behavior, emphasizing the uniqueness of each individual's experience. In addition, where are limited to knowing the specific medical conditions in the dataset that either restrict or permit individuals to drive. For instance, someone utilizing a walker may indicate struggles with back issues, affecting their ability to hold themselves upright. However, it's essential to note that this doesn't necessarily imply an inability to drive.
+
+The distinct patterns of distribution among various assistive technology groups, particularly the right skew exhibited by wheelchair and crutch users, introduce a layer of complexity to the discussion. This suggests that not only does the choice of assistive technology influence travel behavior, but different technologies may lead to varied travel behaviors within the disabled community. This nuance prompts further exploration into the specific factors contributing to these variations, raising questions about the role of societal attitudes, infrastructure, and individual preferences in shaping travel behaviors. The lower travel distances observed among white cane users, with a notable outlier challenging the trend, highlight the need for a deeper understanding of the circumstances surrounding individual cases. This brings to the forefront the importance of considering unique circumstances and outliers within each group, emphasizing that a one-size-fits-all approach may not capture the complexity of travel behavior among individuals with disabilities. While our study establishes a clear link between the type of assistive technology and travel behavior, it also serves as a catalyst for further exploration. The limitations of the study, particularly the constraints within the dataset and the complexities introduced by individual factors, underscore the need for future research. To holistically address the overarching research question, future studies should delve into specific disability types, considering the nuanced interplay of factors such as affordability, accessibility, adaptability, and safety features. By doing so, we can better inform the development of inclusive support systems and enhance the overall travel experience for people with disabilities.
+
+Now moving to our second hypothesis, H2; our analysis indicated a significant correlation between individuals' choice of assistive technology and their income levels. Recognizing the lack of data on household size and income sources in our dataset, we decided to categorize income levels into three groups using the existing ten categories. The first three categories were designated as low income, the middle four as middle income, and the final three as high income. While acknowledging the limitations of this method in precisely determining individuals' income levels without accounting for household size, income sources and other variables that might influence income level, it allowed us to derive valuable insights from the available data. We categorized the 10 income levels into income ranges as follows: less than \$10,000 to \$24,999 as a lower income range, \$25,000 to \$124,999 as a middle income range, and \$125,000 and above as a higher income range. Upon classification, we could observe some distinct trends from the crosstable. Within the lower income range, there was a higher prevalence of individual choices for canes and walkers. In the middle-higher income and higher income ranges, the preference for canes and walkers decreased. Interestingly, individuals in the higher and middle-higher income range exhibited a higher preference for crutches. We hypothesized that individuals with higher incomes are more likely to use assistive technology for travel compared to those with lower incomes. However, our results did not show a distinct pattern for the choices of assistive technology and income range.
+
+The observation that people with higher income are less likely to use cane and walkers aligns with our hypothesis that people with higher income might use less low-tech technology. However, we did not observe an increased use of motorized chairs and motorized scooters for people with higher income. Similarly for lower income levels, we could see a slight increase in people's use of cane, walker and wheelchairs for individuals with lower income, but we did not observe an decrease in use of motorized wheelchairs and motorized scooters.
+
+Our hypothesis aimed to address a gap in current research, specifically the lack of studies related to income and the choice of assistive technology. We wanted to explore how disabled individuals could be better supported for traveling. The lack of government funding and the limits on the assistive technology that could be chosen by the disabled individuals had always been an issue that is being brought up in research. Kaye et al. observed a difference of use of high-tech, middle-tech and low-tech assistive technology for disabled individuals with different income levels [@kaye2008disparities] . Their study showed that individuals with lower income are more likely to use low-tech assistive technology. Our study aligns with their findings, as individuals with lower incomes are more likely to use low-tech assistive technology, as seen in the cases of crutches and wheelchairs.
+
+Further research could use a more comprehensive dataset that included the prices of assistive technology reported by the participants of the census. The dataset we are currently using was focused primarily on traveling patterns so it lacks detailed information on the price of assistive technology used by each participant. Additionally, future research could employ a clearer classification for types of disabilities. For current study, the only variable we could differentiate if the individual has a disability is the medical condition variable. However, that variable might also include some individuals who are not identified as disabled. Collecting more data on participants' specific types of disabilities and the degree to which their disabilities influence mobility would enhance the depth of future research. Also, because most of the two variables for this hypothesis are categorical variables, we could hardly conduct any correlational test in which we could only observe some patterns from the data that the cross table provided.
+
+
+\newpage
+
+# References
+
+  <div id="refs"></div>
+  
+\newpage
+
+\section{Appendix}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.77\textwidth]{image/image1} % Replace "example-image-b" with the filename of your image
+    \caption{Crosstable for assitive technology use and income level}
+    \label{fig:appendixB1}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{image/image2} % Replace "example-image-b" with the filename of your image
+    \caption{Crosstable(continued)}
+    \label{fig:appendixB1}
+\end{figure}
+
